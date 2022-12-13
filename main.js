@@ -67,7 +67,7 @@ window.addEventListener('keydown',(e)=>
     if(e.key == window.word[index])
     {
         
-        (document.querySelector('.'+window.word[index] + index)).style.backgroundColor = "#244"
+        (document.querySelector('.'+window.word[index] + index)).style.backgroundColor = "#488"
        
         if(index == 0)
         {

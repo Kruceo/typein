@@ -28,14 +28,19 @@ body
     background-color: #224;
     transition: background-color 300ms ease-in-out;
     color: white;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     margin: 10px;
     text-transform: uppercase;
+}
+#box>h2
+{
+    font-size: 12px;
 }
 #grid
 {
@@ -47,5 +52,5 @@ body
 {
     color: white;
     display: flex;
-    font-size: 20px;
+    font-size: 12px;
 }
