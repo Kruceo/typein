@@ -12,11 +12,12 @@
 
 <body>
     <header id="bar">
-        <p id="success">{{ window.successtime }}</p>
-        <p id="timePerLetter">{{ window.successtime/window.word.length }}</p>
-        <p id="averagePerLetter">{{ window.successtime/window.word.length }}</p>
-        <p id="tries">{{ window.successtime/window.word.length }}</p>
-        <p id="errorMap">{{ window.successtime/window.word.length }}</p>
+        <p id="success" watch="window.successTime">total: {{ window.successTime }}ms</p>
+        <p id="timePerLetter" watch="window.successTime">last per letter: {{ window.successTime/window.word.length }}ms</p>
+        <p id="averagePerLetter" watch="window.successTime">per letter average: {{window.average}}ms</p>
+        <p id="tries" watch="window.tries">errors: {{ window.tries }}</p>
+        <p id="errorMap" watch="window.tries" >{{ "left: " + window.mapErrorCounter.left + ' | ' + "middle: "+window.mapErrorCounter.middle + ' | ' + "right: "+window.mapErrorCounter.right }}</p>
+        <p watch="document.querySelector('input').value" >{{ document.querySelector('input').value }}</p>
     </header>
     <header id="content">
         <div id="grid">
@@ -26,6 +27,9 @@
         </div>
         <p>{{window.word}}</p>
     </header>
+
+    <input type="text" name="" id="mobileInput" style="opacity: 0;position: fixed; left: 0px;top: -500px;">
+    
 </body>
 
 </html>

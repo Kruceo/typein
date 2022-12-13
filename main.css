@@ -9,11 +9,12 @@ body
 }
 #content
 {
-    width: 960px;
+    
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     flex-direction: column;
 }
 #content>p
@@ -53,4 +54,5 @@ body
     color: white;
     display: flex;
     font-size: 12px;
+    width: 100vw;
 }
