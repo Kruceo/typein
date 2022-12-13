@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="module" src='main.js'></script>
+</head>
+
+<body>
+    <header id="bar">
+        <p id="success">{{ window.successtime }}</p>
+        <p id="timePerLetter">{{ window.successtime/window.word.length }}</p>
+        <p id="averagePerLetter">{{ window.successtime/window.word.length }}</p>
+        <p id="tries">{{ window.successtime/window.word.length }}</p>
+        <p id="errorMap">{{ window.successtime/window.word.length }}</p>
+    </header>
+    <header id="content">
+        <div id="grid">
+            <div id="box" for="0;window.word.length;i" class="{{'letter '+ word[i] + i}}" watch="window.word">
+                <h2>{{window.word[i]}}</h2>
+            </div>
+        </div>
+        <p>{{window.word}}</p>
+    </header>
+</body>
+
+</html>
